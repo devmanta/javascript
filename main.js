@@ -27,3 +27,18 @@ const person = new People('heejin', '2000-01-01');
 person.introduce('coding');
 
 //Array.prototype
+
+//extends
+class Child extends People{
+    constructor(lastname, birthdate, gender){
+        super(lastname, birthdate);
+        this.gender = gender;
+    }
+
+    goToSchool(school){
+        console.log(`${this.gender}`);
+    }
+}
+
+const child = new Child('jin', 'jin@jin', 'male');
+child.goToSchool('test');
