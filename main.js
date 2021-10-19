@@ -42,3 +42,14 @@ class Child extends People{
 
 const child = new Child('jin', 'jin@jin', 'male');
 child.goToSchool('test');
+
+//static
+class Dream{
+    static TARGET = 'mantaRays';
+
+    static getMyDream(){
+        return 'My dream is to meet mantaRays!!';
+    }
+}
+
+console.log(Dream.getMyDream());
