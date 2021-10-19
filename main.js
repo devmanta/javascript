@@ -53,3 +53,17 @@ class Dream{
 }
 
 console.log(Dream.getMyDream());
+
+
+//Arrow Function
+const addFive = number => number +5;
+console.log(addFive(0));
+
+const concat = (str1, str2) => {
+    return str1 + str2;
+}
+
+console.log(concat('manta', 'Rays'));
+
+const getMantas = () => ({name: 'Manta Rays'});
+console.log(getMantas());
