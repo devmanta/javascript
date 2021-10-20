@@ -70,11 +70,28 @@ console.log(getMantas());
 
 
 //Json parsing
+//GET
 fetch('response url')
-.then((response)=> response.text())
-.them((result)=> {
+    .then((response)=> response.text())
+    .them((result)=> {
     const jsonData = JSON.parst(result);
     //to get specific data
     const tshirtsList = jsonData.filter((shoppinglist)=> shoppinglist.item === 'T-shirts');
     console.log(tshirtsList);
 });
+
+//POST
+const newColor = {
+    name: 'white',
+    hex: '#FFFFFF'
+}
+//option object
+fetch('response url'{
+    method: 'POST',
+    body: JSON.stringify(newColor),
+    headers: { 'Content-Type': 'application/json' }
+})
+    .then((response)=> response.text())
+    .then((result) => {
+        console.log(result);
+    })
