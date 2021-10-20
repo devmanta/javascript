@@ -67,3 +67,14 @@ console.log(concat('manta', 'Rays'));
 
 const getMantas = () => ({name: 'Manta Rays'});
 console.log(getMantas());
+
+
+//Json parsing
+fetch('response url')
+.then((response)=> response.text())
+.them((result)=> {
+    const jsonData = JSON.parst(result);
+    //to get specific data
+    const tshirtsList = jsonData.filter((shoppinglist)=> shoppinglist.item === 'T-shirts');
+    console.log(tshirtsList);
+});
